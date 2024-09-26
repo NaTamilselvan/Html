@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+selector practised</title>
+
+<meta name="Author" content="selection section">
+
+<meta name="description content="This my web site man">
+
+
+
+
+
+</head>
+
+<body>
+
+<h1> Welcome to my web technologies </h1>
+
+<p>web technology all about  frontend(client side) and backend(server side)</p>
+ 
+<h2>hi every one</h2>
+
+<p>
+
+What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+<img src="/home/natamilme/Pictures/1.png" alt="The images is not found" title="images">
+
+<h3>java</h3>
+
+<p>java is class based high level programming language and oop language</p>
+
+
+
+
+</body>
+
+
+</html>
