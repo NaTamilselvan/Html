@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>psudoui</title>
-    <link rel="stylesheet" type="text/css" href="../css/formsre.css">
+  <style>
     
-    
+    body{
+        background-color: yellow;
+        font-family: cursive;
+    }
 
-
+    input:hover{
+        background-color: green;
+    }
+    input:required{
+        border:2px solid violet;
+    }
+    input:not(:required){
+        border: 2px dotted violet;
+    }
+    input:{
+        border: 2px solid violet;
+    }
+    p{
+        display: none;
+    }
+    input+p{
+        display: inline;
+        background-color: red;
+    }
+    input:active{
+        background-color: blue;
+    }
     </style>
 
 </head>
@@ -19,39 +43,40 @@
 <form>
 
     <label>Name:</label>
-    <input type="text" placeholder="Enter your name" size="15" minlength="5" maxlength="15">
+    <input type="text" placeholder="Enter your name" size="15" minlength="5" maxlength="15" required>
+    <p>Enter your name</p>
     <br>
 
     <label>Collage:</label>
-    <input type="text" size="15">
+    <input type="text" size="15" disabled="true">
     <br>
 
     <label>PrimaryEmail:</label>
-    <input type="email" placeholder="Enter your mail">
+    <input type="email" placeholder="Enter your mail" required>
     <br>
 
 
     <label>SecoundryEmail:</label>
-    <input type="email" placeholder="Enter your SecoundryEmail">
+    <input type="email" placeholder="Enter your SecoundryEmail" required>
     <br>
 
     <label>Password:</label>
-    <input type="pwd" placeholder="Enter your Password">
+    <input type="pwd" placeholder="Enter your Password" required>
     <br>
 
     <label >Gender:</label>
-    <input type="radio" value="male" name="gender" checked >
+    <input type="radio" value="male" name="gender" checked  required>
     <label>male</label>
-    <input type="radio" value="female"  name="gender">
+    <input type="radio" value="female"  name="gender" >
     <label>female</label>
     <input type="radio" value="others"  name="gender">
     <label>others</label>
     <br>
     <label>Age:</label>
-    <input type="number" min="18" max="80">
+    <input class="number" type="number" min="18" max="80" required>
     <br>
     <label>MOD:</label>
-    <input type="text" value="online">
+    <input type="text" value="online" disabled>
     <br>
     
     <input type="submit" name="submit" value="submit">
