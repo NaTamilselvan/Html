@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>UI state</title>
+    <link rel="stylesheet" type="css/type" href="formuicss.css">
+<style>
+ body{
+    background-color: yellow;
+ }
+ p{
+    display: none;
+ }
+ input:required{
+   border:2px solid violet;}
+
+   input:disabled{
+    border:2px dotted greenyellow;
+   }
+   input:hover{
+    background-color: red;
+   }
+   input:hover+p{
+    display: inline;
+    font-family: monospace;
+    background-color: aqua;
+   }
+   input:focus{
+    background-color: silver;
+    font-weight: bold;
+    font-family: cursive;
+}
+   
+img{
+    display:none;
+}
+input[type="email"]:focus:valid+img.c{
+    display:inline;
+
+
+}
+
+</style>   
+
+</head>
+<body >
+
+    <h2>sign-in</h2>
+    <form>
+       
+        <label for="name">Name:</label>
+        <input type="text" size="15" placeholder="Enter your name" required id="name">
+        <p>enter your name</p>
+
+        <br>
+
+        <label for="name">Collage:</label>
+        <input type="text" size="15" placeholder="Collage" required id="Collage" disabled>
+        <br>
+
+        <label for="pmail">Email:</label>
+        <input type="email" size="15" placeholder="Enter your namil" required id="pmail" >
+        <br>
+
+
+        <label for="smail">Secountrymail:</label>
+    
+        <input type="email" size="15" placeholder="Enter your  secountry namil" required id="smail" >
+        <img  class="c" src="pngtree-green-check-mark-icon-flat-style-png-image_1986021.jpg">
+        <img  class="n"  src="images.png">
+
+        <br>
+
+        <label>gender</label>
+        <input type="radio" name="gender" value="male" checked>
+        <label>Male</label>
+        <input type="radio" name="gender" value="female"  >
+        <label>female</label>
+        <input type="radio" name="gender" value="others"   >
+        <label>others</label>
+
+        <br>
+        <label>age</label>
+        <input type="number" min="18" max="40" size="15">
+
+        <br>
+        <label>mode</label>
+        <input type="text"  size="15" value="online" readonly >
+
+       <br> 
+
+       <input type="submit" value="submit">
+        
+        
+
+
+
+
+    </form>
+    
+</body>
+</html>
