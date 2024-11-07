@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>display property</title>
+	<style type="text/css">
+		
+     a{
+     	padding:5px;
+     	display: block;
+     	text-decoration: none;
+        font-weight: bold;
+     }
+     a:link{
+     	background-color: ;
+     }
+     a:hover{
+     	color:green; 
+     }
+     a:active{
+     	color:brown;
+     }
+     a:visted{
+     	color:brown;
+     }
+     #para1{
+     	background-color: yellow;
+     	color: red;
+     	padding: 10px;
+     	margin:0;
+     	display: none;
+
+     }
+
+     a[href="www"]:hover ~ p{
+          
+          display: block;
+
+     }
+
+
+
+	</style>
+</head>
+<body>
+
+
+    <a href="www">Home</a>
+    <p id="para1">welcome to my page</p>
+    <a href="">Products</a>
+    <a href="">services</a>
+    <a href="">About us</a>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>para comes up</title>
+
+
+	<style type="text/css">
+		
+     p{
+     	background-color: yellow;
+     	color: red;
+     	display:none;
+     }
+
+     input:hover{
+     	background-color: gray;
+
+     }
+
+     input[name="name"]:focus  ~ .para1 {
+     	display: block;
+     }
+     input[type="radio"]:checked{
+     	height: 20px;
+     	width:20px;
+     }
+
+     input[type="radio"]:checked ~ label{
+     	color:red;
+     }
+
+
+
+	</style>
+</head>
+<body>
+
+
+  <form >
+   <label for="name">Name:</label>
+   <input type="text" name="name" id="name"><br>
+   <p class="para1">enter your name</p>
+
+   <label for="email">email:</label>
+   <input type="text" name="mail" id="email"><br>
+<p>enter your mail</p>
+
+
+
+
+
+<label>s</label>
+
+<input type="radio" checked>
+
+<input type="radio">
+<label>male</label>
+
+<input type="radio">
+
+<label>female</label>
+
+  </form>
+</body>
+</html>
